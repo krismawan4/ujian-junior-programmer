@@ -1,0 +1,17 @@
+{
+    "attributes": {
+        "nama": {
+            "type": "string"
+        },
+        "tempat_lahir": {
+            "type": "string"
+        },
+        "tanggal_lahir": {
+            "type": "date"
+        },
+        "penghasilan": {
+            "type": "unsignedBigInteger"
+        }
+    },
+    "relations": {}
+}
