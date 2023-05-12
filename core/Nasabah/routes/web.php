@@ -8,6 +8,8 @@ Route::namespace('Core\Nasabah\Controllers\Web')
 ->middleware(['web', 'splade'])
 ->group(function () {
     #*** Ex: START: Nasabah ***#
-    Route::resource('nasabah', 'NasabahController');
+    Route::middleware('auth')->group(function () {
+        Route::resource('nasabah', 'NasabahController');
+    });
     #*** END: Nasabah ***#
 });
